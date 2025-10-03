@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --background:#000430;
+    --secondbackground:#171c48;
+    --text:#fff;
+    --purple:#828dff;
+    --teal:#24feee;
+}
+body{
+    color: var(--text);
+    background-color: var(--background);
+    height:100vh
+}
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+.stats-container{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 10px ;
+    margin: 10px;
+    border: 2px solid var(--purple);
+}
+#stats-number{
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--secondbackground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.detalis h1,p{
+    margin-bottom: 9px;
+}
+.detalis div{
+    margin-top: 10px;
+}
+.progressbar {
+    width: 300px;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+#progress {
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    border-radius: inherit;
+    transition: width 0.4s ease;
+}
+.input{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 520px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+#txt{
+    background-color: var(--secondbackground);
+    padding: 10px;
+    height: 30px;
+    width: 430px;
+    outline: none;
+    border-radius: 10px;
+    border:none;
+    font-size: larger;
+    color: white;
+}
+.input button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    border-radius: 50%;
+    background-color: var(--purple);
+    border: none;
+    outline: none;
+}
+.listtbox {
+  width: 530px;
+  margin: 20px auto;
+}
+
+#list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e2240;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+#list li input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+#list li p {
+  flex: 1;
+  margin: 0;
+  color: #aeeaff;
+  font-size: 16px;
+}
+
+#list li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#edit img {
+  width: 20px;
+  filter: invert(60%) sepia(90%) saturate(300%) hue-rotate(180deg);
+}
+
+#delet img {
+  width: 20px;
+  filter: invert(20%) sepia(90%) saturate(600%) hue-rotate(350deg);
+}
+
+
+
